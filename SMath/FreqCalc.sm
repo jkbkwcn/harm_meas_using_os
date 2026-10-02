@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Solver" version="1.3.0.9126"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="144">
+    <identity>
+      <id>5b5a88f9-09e9-4ca2-a016-be62ce4f2a99</id>
+      <revision>12</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <mixedNumbers>false</mixedNumbers>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>3</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true" hideElementsHighlightings="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Core" version="1.73.9126.0" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.73.9126.0" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.73.9126.0" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="101" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">f.clk</e>
+          <e type="operand">72</e>
+          <e type="operand" style="unit">MHz</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="126" top="0" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">N</e>
+          <e type="operand">12</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="216" top="0" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">p</e>
+          <e type="operand">7</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="36" width="385" height="23" color="#000000" fontSize="10">
+      <text lang="pol" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Generowanie przebiegu prostokątnego, flitrowanego na trójkąt:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="72" width="95" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">PRS.TIM3</e>
+          <e type="operand">63</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="126" top="72" width="111" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ARR.TIM3</e>
+          <e type="operand">1119</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="252" top="72" width="212" height="49" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">CCR.TIM3</e>
+          <e type="operand">ARR.TIM3</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">560</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="126" width="386" height="55" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">f.TIM3_PWM</e>
+          <e type="operand">f.clk</e>
+          <e type="operand">PRS.TIM3</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">ARR.TIM3</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1004.4643</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="198" width="234" height="53" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">D.TIM3_PWM</e>
+          <e type="operand">CCR.TIM3</e>
+          <e type="operand">ARR.TIM3</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">100</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">50</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="270" width="121" height="23" color="#000000" fontSize="10">
+      <text lang="pol" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Wyzwalanie ADC:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="297" width="87" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">PRS.TIM2</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="117" top="297" width="103" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ARR.TIM2</e>
+          <e type="operand">139</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="234" top="297" width="204" height="49" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">CCR.TIM2</e>
+          <e type="operand">ARR.TIM2</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">70</e>
+        </result>
+      </math>
+    </region>
+    <region left="522" top="306" width="127" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">f.ADC_clk</e>
+          <e type="operand">12</e>
+          <e type="operand" style="unit">MHz</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="522" top="333" width="141" height="47" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T.ADC_clk</e>
+          <e type="operand">1</e>
+          <e type="operand">f.ADC_clk</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="342" width="76" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T.s</e>
+          <e type="operand">13.5</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="378" width="360" height="55" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">f.TIM2</e>
+          <e type="operand">f.clk</e>
+          <e type="operand">PRS.TIM2</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">ARR.TIM2</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">kHz</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">514.2857</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="450" width="205" height="47" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">f.ADC</e>
+          <e type="operand">f.TIM2</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">kHz</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">257.1429</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="504" width="234" height="53" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">D.TIM2_PWM</e>
+          <e type="operand">CCR.TIM2</e>
+          <e type="operand">ARR.TIM2</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">100</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">50</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="576" width="174" height="47" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T.ADC</e>
+          <e type="operand">1</e>
+          <e type="operand">f.ADC</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">μs</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">3.8889</e>
+        </result>
+      </math>
+    </region>
+    <region left="198" top="585" width="288" height="32" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T.conv</e>
+          <e type="operand">T.s</e>
+          <e type="operand">12.5</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">T.ADC_clk</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">μs</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">2.1667</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="630" width="100" height="23" color="#000000" fontSize="10">
+      <text lang="pol" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Oversampling:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="666" width="131" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">OSR</e>
+          <e type="operand">2</e>
+          <e type="operand">2</e>
+          <e type="operand">p</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">256</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="720" width="182" height="47" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">f.TRI</e>
+          <e type="operand">f.ADC</e>
+          <e type="operand">OSR</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">kHz</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">1.0045</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="792" width="139" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">f.TIM3_PWM</e>
+          <e type="operand">f.TRI</e>
+          <e type="operator" args="2">-</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>

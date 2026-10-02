@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Solver" version="1.3.0.9126"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="120">
+    <identity>
+      <id>98440e24-0044-496b-a015-74c2483dfecc</id>
+      <revision>3</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <mixedNumbers>false</mixedNumbers>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true" hideElementsHighlightings="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Core" version="1.73.9126.0" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.73.9126.0" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">n</e>
+          <e type="operand">12</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="0" width="81" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">f.s</e>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">kHz</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="252" top="0" width="93" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.ref</e>
+          <e type="operand">3.3</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="54" width="187" height="56" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">LSB</e>
+          <e type="operand">V.ref</e>
+          <e type="operand">2</e>
+          <e type="operand">n</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">μV</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">805.6641</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="126" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">p</e>
+          <e type="operand">7</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="162" width="131" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">OSR</e>
+          <e type="operand">2</e>
+          <e type="operand">2</e>
+          <e type="operand">p</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">256</e>
+        </result>
+      </math>
+    </region>
+    <region left="252" top="216" width="213" height="58" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">LSB.os</e>
+          <e type="operand">V.ref</e>
+          <e type="operand">2</e>
+          <e type="operand">p</e>
+          <e type="operand">n</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">μV</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">6.2943</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="234" width="186" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">f.os</e>
+          <e type="operand">f.s</e>
+          <e type="operand">OSR</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">MHz</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">0.256</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="288" width="162" height="47" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T.os</e>
+          <e type="operand">1</e>
+          <e type="operand">f.os</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">μs</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">3.9062</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="342" width="183" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T.tri</e>
+          <e type="operand">OSR</e>
+          <e type="operand">T.os</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.001</e>
+          <e type="operand" style="unit">s</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="378" width="159" height="47" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">f.tri</e>
+          <e type="operand">1</e>
+          <e type="operand">T.tri</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1000</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>

@@ -1,0 +1,204 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "e33724b9-b9fa-418d-b266-2b2cf19b7f44")
+	(paper "A4")
+	(title_block
+		(title "Main schematic ")
+		(company "Dawid Maślanka, Jakub Kwiecień, Kacper Gubała AGH University of Cracow")
+	)
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 71.12 91.44) (xy 90.17 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc15eebe-eda3-4cea-bb8b-751e4e9e30f2")
+	)
+	(wire
+		(pts
+			(xy 127 100.33) (xy 158.75 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc6b53f1-56e6-4c5a-9902-47833edca563")
+	)
+	(wire
+		(pts
+			(xy 127 83.82) (xy 158.75 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5d6195e-c504-490f-a1b5-47e957a55284")
+	)
+	(global_label "SIG_HARM_IN"
+		(shape input)
+		(at 71.12 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "44ccca59-13d6-406f-9a62-73b2d0037739")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 56.0395 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(sheet
+		(at 90.17 76.2)
+		(size 36.83 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6a64c2d6-5b24-41e7-aa19-823fad22a971")
+		(property "Sheetname" "Adder"
+			(at 90.17 75.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "adder.kicad_sch"
+			(at 90.17 109.8046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ADC" output
+			(at 127 83.82 0)
+			(uuid "af985037-9829-4dc2-a21c-f03d2be376fc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWM" input
+			(at 127 100.33 0)
+			(uuid "c096b98a-7e13-4446-a0cc-bfcc2834ea95")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SIG_HARM" input
+			(at 90.17 91.44 180)
+			(uuid "39469ec8-2022-41db-8367-15111acbf5f5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "harm_meas_using_os"
+				(path "/e33724b9-b9fa-418d-b266-2b2cf19b7f44"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 77.47)
+		(size 36.83 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fa3e66bc-0e7e-40fd-b722-12862b731c21")
+		(property "Sheetname" "MCU_with_periph"
+			(at 158.75 76.7584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu_with_periph.kicad_sch"
+			(at 158.75 109.8046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "TIM_PWM" output
+			(at 158.75 100.33 180)
+			(uuid "3cfa3d95-46b9-4a57-bc95-01f1e7daab1d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ADC12" input
+			(at 158.75 83.82 180)
+			(uuid "0d869e8d-07ba-4793-8c9c-4bdc57a4cc39")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "harm_meas_using_os"
+				(path "/e33724b9-b9fa-418d-b266-2b2cf19b7f44"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
